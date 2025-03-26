@@ -13,6 +13,7 @@ import jakarta.validation.Valid;
 
 @RestController
 @RequestMapping("/api/producto")
+@CrossOrigin(origins = "http://localhost:3000") // <--- Permite peticiones desde React
 public class ProductoController {
 
     @Autowired
